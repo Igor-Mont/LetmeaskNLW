@@ -7,11 +7,9 @@
     flex: 7;
     background-color: #835afd;
     color: #fff;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding: 120px 80px;
 
     img {
@@ -27,18 +25,17 @@
     p {
       font-size:24px;
       line-height:32px;
-      margin-top: 16px;
       color: #f8f8f8;
+      margin-top: 16px;
     }
   }
 
   main{
     flex: 8;
-    padding: 0 32px;
-
     display: flex;
     align-items: center;
     justify-content:center;
+    padding: 0 32px;
   }
 
   .main-content {
@@ -55,17 +52,17 @@
 
     h2 {
       font-size: 24px;
-      margin: 64px 0 24px;
       font-family: 'Poppins', sans-serif;
+      margin: 64px 0 24px;
     }
 
     form {
       input {
         height:50px;
         border-radius: 8px;
-        padding: 0 16px;
         background-color:#fff;
         border: 1px solid #a8a8b3;
+        padding: 0 16px;
       }
 
       button {
@@ -114,9 +111,9 @@
   .separator {
     font-size:14px;
     color: #a8a8b3;
-    margin: 32px 0;
     display: flex;
     align-items: center;
+    margin: 32px 0;
 
     &::before {
       content: '';

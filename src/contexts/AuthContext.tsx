@@ -1,7 +1,5 @@
-import { ReactNode } from "react";
 import { firebase, auth } from '../services/firebase';
-import { createContext, useState, useEffect } from 'react';
-
+import { createContext, useState, useEffect, ReactNode } from 'react';
 
 type User = {
   id: string;
@@ -14,7 +12,6 @@ type AuthContextType = {
   signInWithGoogle: () => Promise<void>;
 }
 
-
 type AuthContextProviderProps = {
   children: ReactNode;
 }
@@ -25,13 +22,14 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
 
   const [user, setUser] = useState<User>();
 
+  // para não precisa logar toda vez que der relooad
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(user => {
       if (user) {
         const { displayName, photoURL, uid} = user
 
         if(!displayName || !photoURL) {
-          throw new Error('Missing information from Google Account')
+          throw new Error('Missing information from Google Account');
         }
 
         setUser({

@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://letmeask-nlw-5d133.web.app/">
-    <img src="./src/assets/images/logo.svg" />
+    <img width="220" src="./src/assets/images/logo.svg" />
   </a>
 </h1>
 <h3 align="center">Que tal organizar perguntas e respostas do seu ambiente?</h3>
@@ -13,7 +13,6 @@
 
 <p>Essas foram as ferramentasusadas na implementação desse projeto:</p>
 
-- [Node.js](https://nodejs.org/en/)
 - [Firebase](https://firebase.google.com/?gclid=Cj0KCQjw_dWGBhDAARIsAMcYuJyHiqD_4zWVaKaMTMRfyv3KC59VmISt3k-Gujyz9JyBg9sPorYeQOkaAkJGEALw_wcB&gclsrc=aw.ds)
 - [Styled-components](https://styled-components.com/)
 - [React](https://pt-br.reactjs.org/)
@@ -38,6 +37,8 @@
 
 - Room (Admin)
 <img src="./screenshots/roomAdmin.png" />
+
+<h3><a href="https://www.figma.com/file/kZga9S84GcBrFNYJ9rDNGV/Letmeask">Layout do projeto no Figma</a></h3>
 
 <h2>Igor Monteiro</h2>
 <img align="center" width="130" src="./screenshots/eu.png" />

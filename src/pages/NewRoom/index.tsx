@@ -1,14 +1,14 @@
 import { FormEvent, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
-import illustrationImg from '../assets/images/illustration.svg'
-import logoImg from '../assets/images/logo.svg'
+import illustrationImg from '../../assets/images/illustration.svg'
+import logoImg from '../../assets/images/logo.svg'
 
-import { Button } from '../components/Button';
-import { database } from '../services/firebase';
-import { useAuth } from '../hooks/useAuth';
+import { Button } from '../../components/Button';
+import { NewRoomPage } from './styles';
 
-import '../styles/auth.scss'
+import { database } from '../../services/firebase';
+import { useAuth } from '../../hooks/useAuth';
 
 export function NewRoom() {
   const { user } = useAuth();
@@ -33,7 +33,7 @@ export function NewRoom() {
   }
 
   return (
-    <div id="page-auth">
+    <NewRoomPage id="page-auth">
       <aside>
         <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
         <strong>Crie salas de Q&amp;A ao-vivo</strong>
@@ -57,6 +57,6 @@ export function NewRoom() {
           <p>Quer entrar em uma sala existente? <Link to="/">Clique aqui</Link></p>
         </div>
       </main>
-    </div>
+    </NewRoomPage>
   );
 }

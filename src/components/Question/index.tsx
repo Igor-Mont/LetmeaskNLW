@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
-import './styles.scss';
+
+import { TemplateQuestion } from './styles';
 import cx from 'classnames';
 
 type QuestionProps = {
@@ -21,7 +22,7 @@ export function Question({
   children
 }: QuestionProps) {
   return (
-    <div className={cx(
+    <TemplateQuestion className={cx(
       'question',
       { answered: isAnswered },
       { highlighted: isHighlited && !isAnswered }
@@ -34,6 +35,6 @@ export function Question({
         </div>
         <div>{children}</div>
       </footer>
-    </div>
+    </TemplateQuestion>
   );
 }
